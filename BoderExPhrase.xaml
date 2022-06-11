@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="WordListApp.BoderExPhrase"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WordListApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="70" d:DesignWidth="200" Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/> 
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="ExPhraseName" Grid.Column="0"  Grid.Row="0" Grid.ColumnSpan="5"
+               Style="{StaticResource BorderHeaderStyleP}" >Test</TextBlock>
+        <Label x:Name="ExWordType" Grid.Row="1" Grid.Column="0" Style="{StaticResource block}">词性</Label>
+        <Label x:Name="ExPhraseEN" Grid.Row="1" Grid.Column="1" Style="{StaticResource block}">EN</Label>
+        <Label x:Name="ExPhraseCN" Grid.Row="1" Grid.Column="2" Style="{StaticResource block}">CN</Label>
+        <Label x:Name="ExPhraseEg" Grid.Row="1" Grid.Column="3" Style="{StaticResource block}">Eg</Label>
+
+    </Grid>
+</UserControl>
